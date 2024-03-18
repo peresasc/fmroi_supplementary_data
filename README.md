@@ -1,9 +1,9 @@
-# ROIs Quality Control
+# fMROI Supplementary Data
 
 
 ## Overview
 
-Welcome to the "ROIs Quality Control" repository! This repository contains a collection of scripts and datasets for generating and testing ROIs from various neuroimaging software, as part of the study "fMROI: a simple and adaptable toolbox for easy region-of-interest creation".
+Welcome to the "fmroi_supplementary_data" repository! This repository contains a collection of scripts and datasets for generating and testing ROIs from various neuroimaging software, as part of the study "fMROI: a simple and adaptable toolbox for easy region-of-interest creation".
 
 ## Contents
 
@@ -20,8 +20,8 @@ To use the scripts and explore the datasets:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/rois_quality_control.git
-   cd rois_quality_control
+   git clone https://github.com/yourusername/fmroi_supplementary_data.git
+   cd fmroi_supplementary_data
 2. Or download the zip-file direct from the GitHub interface.
 
 -------
