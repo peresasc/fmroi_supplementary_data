@@ -3,13 +3,14 @@
 
 ## Overview
 
-Welcome to the "fmroi_supplementary_data" repository! This repository contains a collection of scripts and datasets for generating and testing ROIs from various neuroimaging software, as part of the study "fMROI: a simple and adaptable toolbox for easy region-of-interest creation".
+Welcome to the "fmroi_supplementary_data" repository! This repository contains a collection of scripts and datasets used in the study *"fMROI: A Flexible Toolbox for ROI Design and Functional Connectome Analysis"*. It provides the necessary resources to reproduce and validate the full ROI-to-ROI processing pipeline, including ROI generation, BOLD signal extraction and cleaning, functional connectome computation, and classification using support vector machines (SVM). The repository also includes tools for benchmarking ROI creation against established neuroimaging software.
+
 
 ## Contents
 
-### Dataset
+### ROI Dataset
 
-- `./dataset`: Contains all the templates used in the evaluation tests of the ROI creation algorithms, as well as all the ROIs created by each of the tested algorithms;
+- `./roi_dataset`: Contains all the templates used in the evaluation tests of the ROI creation algorithms, as well as all the ROIs created by each of the tested algorithms;
   - afni-dataset.zip: Spherical, Cubic, Img2mask, Clustering, and Drawing ROIs;
   - fmroi-dataset.zip: Spherical, Cubic, Img2mask, MaxK, Clustering, Regiongrowing, and Drawing ROIs;
   - fsl-dataset.zip: Spherical, Cubic, Img2mask, and Drawing ROIs;
@@ -63,9 +64,15 @@ The parameters for creating ROIs are described in their file names. The first tw
   - Radius in voxels: 10 voxel;
   - Center of the sphere: x = 192; y = 216; and z = 194.
 
-### Scripts
+### ROI Scripts
 
-- `./scripts`: All scripts used to create ROIs or test the performance of the algorithms are in this folder (afni, fmroi, fsl, and spm). MRIcroGL does not allow ROI creation via script; therefore, its ROIs were created using its GUI. The `validation` folder contains scripts to test the ROI creation algorithms, namely the `roi_areavol.m` script calculates the surface area and volume of the ROIs, and the `roisgen_qc.m` script performs statistical calculations to assess the performance of the algorithms.
+- `./roi_scripts`: All scripts used to create ROIs or test the performance of the algorithms are in this folder (afni, fmroi, fsl, and spm). MRIcroGL does not allow ROI creation via script; therefore, its ROIs were created using its GUI.
+
+### Validation
+The `./validation` folder contains the `scripts` and `classification_data` folders. 
+- `scripts` folder contains the scripts used to test the ROI creation algorithms. The `roi_areavol.m` script calculates the surface area and volume of the ROIs, while the `roisgen_qc.m` script performs statistical computations to assess algorithm performance. This folder also includes scripts for preparing the OpenNeuro dataset ds00030 (`prepare_data_for_classification.m`), a pipeline for extracting and preprocessing BOLD time series and subsequently computing connectomes and exporting feature matrices (`applymask_connectome_pipeline.m`). Finally, the `svm_parallelperm.m` script performs the classification analysis using a support vector machine (SVM - LIBSVM 3.36 package) with permutation testing.
+- `classification_data` folder contains the input data required to run the classification analyses.
+
 
 ### Linear fit plots
 
