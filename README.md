@@ -130,9 +130,15 @@ _User-Friendly ROI Creation and Neuroimage Visualization Software_
 **GitHub project:** [https://github.com/peresasc/fmroi](https://github.com/peresasc/fmroi)
 
 
-*Maintained by members and collaborators of Proaction Lab*<br/>
-*FPCE, University of Coimbra*<br/>
-*Rua do Colégio Novo - 3001-802*<br/>
-*Coimbra, Portugal*<br/>
-[https://proactionlab.fpce.uc.pt](https://proactionlab.fpce.uc.pt)
+*Maintained by André Peres and collaborators*  
+*Bioinformatics Multidisciplinary Environment*  
+*Digital Metropolis Institute*  
+*Federal University of Rio Grande do Norte*  
+*Av. Capitão-Mor Gouveia, S/N – Lagoa Nova*  
+*Natal/RN, Brazil – 59078-900*  
+[*peres.asc@gmail.com*](mailto:peres.asc@gmail.com)
+
+[![BioME logo](./biome_logo.png)](https://bioinfo.imd.ufrn.br)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Proaction logo](./proaction_logo.png)](https://proactionlab.fpce.uc.pt)
 
