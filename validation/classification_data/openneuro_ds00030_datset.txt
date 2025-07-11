@@ -1,0 +1,2 @@
+Access the ds000030 dataset at:
+https://openneuro.org/datasets/ds000030/versions/1.0.0
